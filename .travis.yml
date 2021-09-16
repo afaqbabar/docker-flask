@@ -6,4 +6,4 @@ before_install:
         - docker build -t afaqbabar86/docker-flask -f Dockerfile.dev . 
 
 script:
-      - docker run afaqbabar86/docker-flask -- --coverage
+      - docker run afaqbabar86/docker-flask
