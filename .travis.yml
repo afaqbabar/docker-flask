@@ -1,0 +1,9 @@
+sudo: required
+services:
+      - docker
+
+before_install:
+        - docker build -t afaqbabar86/docker-flask -f Dockerfile.dev . 
+
+script:
+      - docker run afaqbabar86/docker-flask -- --coverage
